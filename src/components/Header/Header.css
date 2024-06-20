@@ -1,0 +1,80 @@
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.header button:hover {
+    background-color: #45a049;
+}
+/*  */
+.modal, .overlay{
+  width:100vw;
+  height: 100vh;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  position:fixed;
+}
+
+.overlay {
+  background: #333;
+}
+
+.modal-content {
+  position:absolute;
+  top:40%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  line-height:1.4;
+  background: #fff;
+  padding: 14px 28px;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 300px;
+}
+
+.cls_mod {
+  /* position:absolute; */
+  top:10px;
+  right:10px;
+  padding:5px 6px;
+  position: fixed;
+}
+.image-container {
+  width: 100%;
+  height: 200px; /* Set your desired height */
+  background-color: #f2f2f2; /* Placeholder background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lazy-image {
+  opacity: 0; /* Initially hide the image */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
+.image-visible {
+  opacity: 1; /* Show the image when it's in or near the viewport */
+}
